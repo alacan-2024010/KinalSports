@@ -12,23 +12,31 @@ export const useAuthStore = create(
             error: null,
             isAuthenticated: false,
         
-            login: async (emailOrUsername, password) => {
+            login: async (data) => {
                 try {
                     set({ loading: true, error: null });
-                    const { data } = await loginRequest({ emailOrUsername, password });
+
+                    const { data: response } = await loginRequest(data);
+
                     set({ 
-                        user: data.userDetails,
-                        token: data.token,
-                        expiresAt: data.expiresAt,
+                        user: response.userDetails,
+                        token: response.token,
+                        expiresAt: response.expiresAt,
                         loading: false,
-                        error: message
+                        error: null,
+                        isAuthenticated: true
                     });
+
                     return { success: true };
+
                 } catch (error) {
                     console.error("Error en el login:", error);
+
                     const message = error.response?.data?.message || "Error desconocido";
+
                     set({ error: message, loading: false });
-                    return{
+
+                    return {
                         success: false,
                         error: message
                     }
