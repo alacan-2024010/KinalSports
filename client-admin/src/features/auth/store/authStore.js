@@ -16,15 +16,13 @@ export const useAuthStore = create(
                 try {
                     set({ loading: true, error: null });
 
-                    const { data: response } = await loginRequest(data);
-
+                    const { data } = await loginRequest({emailOrUsername, password});
+                    console.log(data);
                     set({ 
-                        user: response.userDetails,
-                        token: response.token,
-                        expiresAt: response.expiresAt,
+                        user: data.userDetails,
+                        token: data.token,
+                        expiresAt: data.expiresAt,
                         loading: false,
-                        error: null,
-                        isAuthenticated: true
                     });
 
                     return { success: true };

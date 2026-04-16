@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form";
 import { useAuthStore } from "../store/authStore";
-
+import{useNavigate} from "react-router-dom";
 export const LoginForm = ({ onForgotPassword }) => {
+    const navigate = useNavigate();
     const { register, handleSubmit ,formState:{errors}} = useForm();
 
     const login = useAuthStore((state) => state.login);
@@ -11,7 +12,10 @@ export const LoginForm = ({ onForgotPassword }) => {
     // Función que se ejecuta al enviar el formulario
     const onSubmit = async (data) => {
         const res = await login(data);
-        console.log(data);
+        console.log(res);
+        if(res.success){
+            navigate("/dashboard");
+        }
     };
 
     return (
@@ -69,8 +73,9 @@ export const LoginForm = ({ onForgotPassword }) => {
             <button
             type="submit"
             className="w-full bg-main-blue hover:opacity-90 text-white font-medium py-2.5 px-4 rounded-lg transition-colors duration-200 text-sm disabled:opacity-50"
+            disabled ={loading}
             >
-            Iniciar Sesión
+                {loading ? "Iniciando..." : "Iniciar Sesión"}
             </button>
 
             <p className="text-center text-sm mt-2">
