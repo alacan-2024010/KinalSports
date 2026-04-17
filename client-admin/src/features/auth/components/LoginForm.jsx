@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form"
 import { useAuthStore } from "../store/authStore";
 import { useNavigate } from "react-router-dom"
-
+import toast from "react-hot-toast"
 export const LoginForm = ({ onForgot }) => {
 
     const navigate = useNavigate();
@@ -18,6 +18,7 @@ export const LoginForm = ({ onForgot }) => {
         console.log(res);
         if(res.success) {
             navigate("/dashboard")
+            toast.success("¡Bienvenido de Nuevo!", { duration: 4000 });
         }
     }
 

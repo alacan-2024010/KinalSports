@@ -56,4 +56,4 @@ C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\o
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\obj\Debug\net8.0\AuthService.Persistence.pdb
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\obj\Debug\net8.0\AuthService.Persistence.genruntimeconfig.cache
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\obj\Debug\net8.0\ref\AuthService.Persistence.dll
-C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\obj\Debug\net8.0\AuthService.Persistence.csproj.CopyComplete
+C:\KinalSports\authentication-service\auth-service\src\AuthService.Persistence\obj\Debug\net8.0\AuthServ.5D1D95C4.Up2Date

@@ -1,8 +1,20 @@
 import { AppRoutes } from "./router/AppRoutes.jsx"
+import { Toaster } from "react-hot-toast"
+
 export const App = () => {
   return (
-    //<> </> es un fragmento de React, se utiliza para envolver múltiples elementos sin agregar nodos adicionales al DOM
     <>
+      <Toaster 
+        position="top-center"
+        toastOptions={{
+          style: {
+            fontFamily: "inherit",
+            fontWeight: 600,
+            fontSize: "1rem",
+            borderRadius: "8px"
+          }
+        }}
+      />
       <AppRoutes />
     </>
   )
