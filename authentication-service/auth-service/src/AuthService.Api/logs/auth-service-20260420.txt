@@ -490,3 +490,12 @@ System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address 
    at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
    at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
    at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+[2026-04-20 11:02:28 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 11:02:29 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-04-20 11:02:30 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-04-20 11:02:30 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-04-20 11:06:42 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 4.0618 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUVSP023UA:00000001","ConnectionId":"0HNKUVSP023UA"}
+[2026-04-20 11:06:43 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"5118b938-0934-4d11-8311-f1ae8ff3afc1","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKUVSP023UA:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKUVSP023UA"}
+[2026-04-20 11:06:43 INF] HTTP POST /api/v1/auth/login responded 200 in 959.9096 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUVSP023UA:00000002","ConnectionId":"0HNKUVSP023UA"}
+[2026-04-20 11:06:45 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.6003 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUVSP023UA:00000003","ConnectionId":"0HNKUVSP023UA"}
+[2026-04-20 11:06:46 INF] HTTP GET /api/v1/auth/users responded 200 in 1250.7322 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUVSP023UA:00000004","ConnectionId":"0HNKUVSP023UA"}
