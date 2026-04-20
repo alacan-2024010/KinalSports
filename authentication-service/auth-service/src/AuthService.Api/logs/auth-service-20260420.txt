@@ -1,0 +1,492 @@
+[2026-04-20 07:17:22 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 07:17:23 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-04-20 07:17:23 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-04-20 07:17:23 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-04-20 07:17:57 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 3.9822 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O23:00000001","ConnectionId":"0HNKURSUF5O23"}
+[2026-04-20 07:17:58 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O23:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O23"}
+[2026-04-20 07:17:58 INF] HTTP POST /api/v1/auth/login responded 200 in 1383.5490 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O23:00000002","ConnectionId":"0HNKURSUF5O23"}
+[2026-04-20 07:57:09 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 1.1890 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O24:00000001","ConnectionId":"0HNKURSUF5O24"}
+[2026-04-20 07:57:10 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O24:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O24"}
+[2026-04-20 07:57:10 INF] HTTP POST /api/v1/auth/login responded 200 in 712.5559 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O24:00000002","ConnectionId":"0HNKURSUF5O24"}
+[2026-04-20 07:57:13 INF] HTTP GET /api/v1/users responded 404 in 1.5701 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O24:00000003","ConnectionId":"0HNKURSUF5O24"}
+[2026-04-20 08:00:13 INF] HTTP GET /api/v1/users responded 404 in 0.7328 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O25:00000001","ConnectionId":"0HNKURSUF5O25"}
+[2026-04-20 08:00:19 INF] HTTP GET /api/v1/users responded 404 in 0.2853 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O25:00000002","ConnectionId":"0HNKURSUF5O25"}
+[2026-04-20 08:00:22 INF] HTTP GET /api/v1/users responded 404 in 0.2271 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O25:00000003","ConnectionId":"0HNKURSUF5O25"}
+[2026-04-20 08:00:26 INF] HTTP GET /api/v1/users responded 404 in 0.2561 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O25:00000004","ConnectionId":"0HNKURSUF5O25"}
+[2026-04-20 08:05:42 INF] HTTP GET /api/v1/users responded 404 in 0.2536 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O26:00000001","ConnectionId":"0HNKURSUF5O26"}
+[2026-04-20 08:08:02 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0864 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000001","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:08:02 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O27:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:08:02 INF] HTTP POST /api/v1/auth/login responded 200 in 224.7499 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000002","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:08:04 INF] HTTP OPTIONS /api/v1/users responded 204 in 0.1448 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000003","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:08:04 INF] HTTP GET /api/v1/users responded 404 in 31.8828 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000004","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:09:09 INF] HTTP OPTIONS /api/v1/atuh/users responded 204 in 0.0740 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000005","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:09:09 INF] HTTP GET /api/v1/atuh/users responded 404 in 0.5625 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000006","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:09:11 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.3449 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000007","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:09:12 INF] HTTP GET /api/v1/auth/users responded 200 in 1176.5475 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000008","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:11:16 INF] HTTP GET /api/v1/auth/users responded 200 in 464.3296 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:00000009","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:11:32 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.7939 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000A","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:11:32 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O27:0000000B","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:11:32 INF] HTTP POST /api/v1/auth/login responded 200 in 123.0714 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000B","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:11:34 INF] HTTP GET /api/v1/auth/users responded 200 in 418.9552 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000C","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:13:14 INF] HTTP GET /api/v1/auth/users responded 200 in 760.6782 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000D","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:13:44 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O27:0000000E","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:13:44 INF] HTTP POST /api/v1/auth/login responded 200 in 121.4412 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000E","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:13:47 INF] HTTP GET /api/v1/auth/users responded 200 in 419.6339 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O27:0000000F","ConnectionId":"0HNKURSUF5O27"}
+[2026-04-20 08:19:39 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O28:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O28"}
+[2026-04-20 08:19:39 INF] HTTP POST /api/v1/auth/login responded 200 in 122.7948 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O28:00000001","ConnectionId":"0HNKURSUF5O28"}
+[2026-04-20 08:19:41 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0982 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O28:00000002","ConnectionId":"0HNKURSUF5O28"}
+[2026-04-20 08:19:42 INF] HTTP GET /api/v1/auth/users responded 200 in 565.9033 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O28:00000003","ConnectionId":"0HNKURSUF5O28"}
+[2026-04-20 08:31:07 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.3150 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000001","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:08 INF] HTTP GET /api/v1/auth/users responded 200 in 578.9697 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000002","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:16 INF] HTTP GET /api/v1/auth/users responded 200 in 456.9565 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000003","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:19 INF] HTTP GET /api/v1/auth/users responded 200 in 421.4506 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000004","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:22 INF] HTTP GET /api/v1/auth/users responded 200 in 491.4839 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000005","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:28 INF] HTTP GET /api/v1/auth/users responded 200 in 423.9417 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000006","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:34 INF] HTTP GET /api/v1/auth/users responded 429 in 1.4570 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000007","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:37 INF] HTTP GET /api/v1/auth/users responded 429 in 0.2279 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000008","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:31:39 INF] HTTP GET /api/v1/auth/users responded 429 in 0.1434 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:00000009","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:32:14 INF] HTTP GET /api/v1/auth/users responded 200 in 430.8327 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:0000000A","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:33:41 INF] HTTP GET /api/v1/auth/users responded 200 in 453.7286 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O29:0000000B","ConnectionId":"0HNKURSUF5O29"}
+[2026-04-20 08:44:33 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1810 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2A:00000001","ConnectionId":"0HNKURSUF5O2A"}
+[2026-04-20 08:44:33 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2A:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2A"}
+[2026-04-20 08:44:33 INF] HTTP POST /api/v1/auth/login responded 200 in 179.2420 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2A:00000002","ConnectionId":"0HNKURSUF5O2A"}
+[2026-04-20 08:44:35 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0936 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2A:00000003","ConnectionId":"0HNKURSUF5O2A"}
+[2026-04-20 08:44:36 INF] HTTP GET /api/v1/auth/users responded 200 in 541.2398 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2A:00000004","ConnectionId":"0HNKURSUF5O2A"}
+[2026-04-20 08:51:58 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1976 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2B:00000001","ConnectionId":"0HNKURSUF5O2B"}
+[2026-04-20 08:51:58 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2B:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2B"}
+[2026-04-20 08:51:58 INF] HTTP POST /api/v1/auth/login responded 200 in 156.2643 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2B:00000002","ConnectionId":"0HNKURSUF5O2B"}
+[2026-04-20 08:52:00 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0662 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2B:00000003","ConnectionId":"0HNKURSUF5O2B"}
+[2026-04-20 08:52:01 INF] HTTP GET /api/v1/auth/users responded 200 in 558.4969 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2B:00000004","ConnectionId":"0HNKURSUF5O2B"}
+[2026-04-20 08:57:28 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1613 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2C:00000001","ConnectionId":"0HNKURSUF5O2C"}
+[2026-04-20 08:57:28 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2C:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2C"}
+[2026-04-20 08:57:28 INF] HTTP POST /api/v1/auth/login responded 200 in 125.7734 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2C:00000002","ConnectionId":"0HNKURSUF5O2C"}
+[2026-04-20 08:58:16 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0714 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2C:00000003","ConnectionId":"0HNKURSUF5O2C"}
+[2026-04-20 08:58:16 INF] HTTP GET /api/v1/auth/users responded 200 in 728.8607 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2C:00000004","ConnectionId":"0HNKURSUF5O2C"}
+[2026-04-20 08:58:42 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0635 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2D:00000001","ConnectionId":"0HNKURSUF5O2D"}
+[2026-04-20 08:58:42 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2D:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2D"}
+[2026-04-20 08:58:42 INF] HTTP POST /api/v1/auth/login responded 200 in 116.2187 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2D:00000002","ConnectionId":"0HNKURSUF5O2D"}
+[2026-04-20 08:58:45 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0478 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2D:00000003","ConnectionId":"0HNKURSUF5O2D"}
+[2026-04-20 08:58:45 INF] HTTP GET /api/v1/auth/users responded 200 in 397.4765 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2D:00000004","ConnectionId":"0HNKURSUF5O2D"}
+[2026-04-20 09:01:47 INF] HTTP GET /api/v1/auth/users responded 200 in 643.0340 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000001","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:03:28 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0679 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000002","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:03:28 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2E:00000003","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2E"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:03:28 INF] HTTP POST /api/v1/auth/register responded 400 in 54.7405 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000003","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:04:26 INF] HTTP GET /api/v1/auth/users responded 200 in 665.3690 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000004","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:04:29 INF] HTTP GET /api/v1/auth/users responded 200 in 484.2577 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000005","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:04:32 INF] HTTP GET /api/v1/auth/users responded 200 in 437.7205 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000006","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:04:34 INF] HTTP GET /api/v1/auth/users responded 200 in 867.9865 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000007","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:05:45 INF] HTTP GET /api/v1/auth/users responded 200 in 485.3271 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2E:00000008","ConnectionId":"0HNKURSUF5O2E"}
+[2026-04-20 09:05:45 INF] HTTP GET /api/v1/auth/users responded 200 in 441.5298 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2F:00000001","ConnectionId":"0HNKURSUF5O2F"}
+[2026-04-20 09:05:59 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0877 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2F:00000002","ConnectionId":"0HNKURSUF5O2F"}
+[2026-04-20 09:05:59 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2F:00000003","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2F"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:05:59 INF] HTTP POST /api/v1/auth/register responded 400 in 10.6710 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2F:00000003","ConnectionId":"0HNKURSUF5O2F"}
+[2026-04-20 09:07:43 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0545 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000001","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:07:43 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2G:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:07:43 INF] HTTP POST /api/v1/auth/login responded 200 in 110.7435 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000002","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:07:45 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0382 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000003","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:07:45 INF] HTTP GET /api/v1/auth/users responded 200 in 420.7745 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000004","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:08:02 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0370 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000005","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:08:02 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2G:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2G"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:08:02 INF] HTTP POST /api/v1/auth/register responded 400 in 10.4619 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000006","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:08:47 INF] HTTP GET /api/v1/auth/users responded 200 in 531.1419 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000007","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:08:51 INF] HTTP GET /api/v1/auth/users responded 200 in 476.9939 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000008","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:02 INF] HTTP GET /api/v1/auth/users responded 200 in 820.3246 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:00000009","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:15 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2G:0000000A","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:15 INF] HTTP POST /api/v1/auth/login responded 200 in 148.2999 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:0000000A","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:17 INF] HTTP GET /api/v1/auth/users responded 200 in 440.9341 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:0000000B","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:29 INF] HTTP POST /api/v1/auth/register responded 429 in 0.4359 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:0000000C","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:33 INF] HTTP POST /api/v1/auth/register responded 429 in 0.3457 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:0000000D","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:09:36 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1221 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2G:0000000E","ConnectionId":"0HNKURSUF5O2G"}
+[2026-04-20 09:10:44 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2H:00000001","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2H"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:10:44 INF] HTTP POST /api/v1/auth/register responded 400 in 11.3854 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2H:00000001","ConnectionId":"0HNKURSUF5O2H"}
+[2026-04-20 09:12:50 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2H:00000002","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2H"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:12:50 INF] HTTP POST /api/v1/auth/register responded 400 in 12.8840 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2H:00000002","ConnectionId":"0HNKURSUF5O2H"}
+[2026-04-20 09:16:44 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2I:00000001","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:16:44 INF] HTTP POST /api/v1/auth/login responded 200 in 130.8836 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2I:00000001","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:16:54 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2I:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:16:54 INF] HTTP POST /api/v1/auth/login responded 200 in 155.4662 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2I:00000002","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:16:57 INF] HTTP GET /api/v1/auth/users responded 200 in 1003.7750 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2I:00000003","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:17:12 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2I:00000004","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2I"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:17:12 INF] HTTP POST /api/v1/auth/register responded 400 in 10.5627 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2I:00000004","ConnectionId":"0HNKURSUF5O2I"}
+[2026-04-20 09:20:49 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0914 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2J:00000001","ConnectionId":"0HNKURSUF5O2J"}
+[2026-04-20 09:20:50 INF] HTTP GET /api/v1/auth/users responded 200 in 672.6975 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2J:00000002","ConnectionId":"0HNKURSUF5O2J"}
+[2026-04-20 09:20:56 INF] HTTP GET /api/v1/auth/users responded 200 in 519.1728 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2J:00000003","ConnectionId":"0HNKURSUF5O2J"}
+[2026-04-20 09:21:06 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0552 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000001","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:06 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2K:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:06 INF] HTTP POST /api/v1/auth/login responded 200 in 115.5297 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000002","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:09 INF] HTTP GET /api/v1/auth/users responded 200 in 406.9129 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000003","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:33 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0486 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000004","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:33 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2K:00000005","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2K"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:21:33 INF] HTTP POST /api/v1/auth/register responded 400 in 10.8712 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000005","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:41 INF] HTTP GET /api/v1/auth/users responded 429 in 0.2447 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000006","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:21:48 INF] HTTP GET /api/v1/auth/users responded 429 in 0.2550 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000007","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:22:55 INF] HTTP GET /api/v1/auth/users responded 200 in 1038.4040 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000008","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:22:56 INF] HTTP GET /api/v1/auth/users responded 200 in 531.2398 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2L:00000001","ConnectionId":"0HNKURSUF5O2L"}
+[2026-04-20 09:23:14 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2L:00000002","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2L"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:23:14 INF] HTTP POST /api/v1/auth/register responded 400 in 10.0019 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2L:00000002","ConnectionId":"0HNKURSUF5O2L"}
+[2026-04-20 09:23:32 INF] HTTP GET /api/v1/auth/register responded 405 in 0.5155 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2M:00000001","ConnectionId":"0HNKURSUF5O2M"}
+[2026-04-20 09:24:23 INF] HTTP GET /api/v1/auth/users responded 200 in 602.6572 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2L:00000003","ConnectionId":"0HNKURSUF5O2L"}
+[2026-04-20 09:24:23 INF] HTTP GET /api/v1/auth/users responded 200 in 452.5290 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2K:00000009","ConnectionId":"0HNKURSUF5O2K"}
+[2026-04-20 09:27:05 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.1155 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000001","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:05 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"511aa39a-2a5c-426d-8439-1cd0023198da","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKURSUF5O2O:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:05 INF] HTTP POST /api/v1/auth/login responded 200 in 128.5600 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000002","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:07 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0846 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000003","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:07 INF] HTTP GET /api/v1/auth/users responded 200 in 501.4144 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000004","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:32 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0651 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000005","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:32 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2O:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2O"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:27:32 INF] HTTP POST /api/v1/auth/register responded 400 in 12.0602 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000006","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 09:27:45 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2O:00000007","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2O"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 09:27:45 INF] HTTP POST /api/v1/auth/register responded 400 in 8.7878 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2O:00000007","ConnectionId":"0HNKURSUF5O2O"}
+[2026-04-20 10:07:45 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.2983 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2P:00000001","ConnectionId":"0HNKURSUF5O2P"}
+[2026-04-20 10:07:45 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKURSUF5O2P:00000002","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKURSUF5O2P"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 10:07:45 INF] HTTP POST /api/v1/auth/register responded 400 in 9.6824 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2P:00000002","ConnectionId":"0HNKURSUF5O2P"}
+[2026-04-20 10:08:58 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.0581 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2P:00000003","ConnectionId":"0HNKURSUF5O2P"}
+[2026-04-20 10:08:58 INF] HTTP GET /api/v1/auth/users responded 401 in 6.0794 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKURSUF5O2P:00000004","ConnectionId":"0HNKURSUF5O2P"}
+[2026-04-20 10:12:48 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 10:12:49 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-04-20 10:12:50 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-04-20 10:12:50 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-04-20 10:19:07 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 10:19:09 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-04-20 10:19:10 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-04-20 10:19:10 INF] AuthService API is running at http://localhost:5156. Health endpoint: http://localhost:5156/health {"SourceContext":"Program"}
+[2026-04-20 10:19:34 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 4.4008 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000001","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:35 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"8901603b-ba0f-4789-9313-80b09e557d69","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKUV2E5HB69:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:36 INF] HTTP POST /api/v1/auth/login responded 200 in 1569.5543 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000002","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:37 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 1.9538 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000003","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:39 INF] HTTP GET /api/v1/auth/users responded 200 in 1439.2366 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000004","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:58 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.0847 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000005","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:19:58 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKUV2E5HB69:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKUV2E5HB69"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 10:19:58 INF] HTTP POST /api/v1/auth/register responded 400 in 84.0673 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000006","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:20:38 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKUV2E5HB69:00000007","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKUV2E5HB69"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 10:20:38 INF] HTTP POST /api/v1/auth/register responded 400 in 11.6396 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB69:00000007","ConnectionId":"0HNKUV2E5HB69"}
+[2026-04-20 10:20:57 INF] HTTP OPTIONS /api/v1/auth/login responded 204 in 0.0710 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000001","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:20:57 INF] User login succeeded {"EventId":{"Id":1002,"Name":"LogUserLoggedIn"},"SourceContext":"AuthService.Application.Services.AuthService","ActionId":"8901603b-ba0f-4789-9313-80b09e557d69","ActionName":"AuthService.Api.Controllers.AuthController.Login (AuthService.Api)","RequestId":"0HNKUV2E5HB6A:00000002","RequestPath":"/api/v1/auth/login","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:20:57 INF] HTTP POST /api/v1/auth/login responded 200 in 396.0066 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000002","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:00 INF] HTTP OPTIONS /api/v1/auth/users responded 204 in 0.4957 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000003","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:00 INF] HTTP GET /api/v1/auth/users responded 200 in 442.1547 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000004","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:08 INF] HTTP OPTIONS /api/v1/auth/register responded 204 in 0.1573 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000005","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:08 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKUV2E5HB6A:00000006","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKUV2E5HB6A"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 10:21:08 INF] HTTP POST /api/v1/auth/register responded 400 in 9.9336 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000006","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:17 ERR] An unhandled exception occurred {"SourceContext":"AuthService.Api.Middlewares.GlobalExceptionMiddleware","RequestId":"0HNKUV2E5HB6A:00000007","RequestPath":"/api/v1/auth/register","ConnectionId":"0HNKUV2E5HB6A"}
+System.InvalidOperationException: This request does not have a Content-Type header. Forms are available from requests with bodies like POSTs and a form Content-Type of either application/x-www-form-urlencoded or multipart/form-data.
+   at Microsoft.AspNetCore.Http.Features.FormFeature.ReadForm()
+   at AuthService.Api.ModelBinders.FileDataModelBinder.BindModelAsync(ModelBindingContext bindingContext) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\ModelBinders\FileDataModelBinder.cs:line 24
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertyAsync(ModelBindingContext bindingContext, ModelMetadata property, IModelBinder propertyBinder, String fieldName, String modelName)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindPropertiesAsync(ModelBindingContext bindingContext, Int32 propertyData, IReadOnlyList`1 boundProperties)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinder.BindModelCoreAsync(ModelBindingContext bindingContext, Int32 propertyData)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.RateLimiting.RateLimitingMiddleware.InvokeInternal(HttpContext context, EnableRateLimitingAttribute enableRateLimitingAttribute)
+   at AuthService.Api.Middlewares.GlobalExceptionMiddleware.InvokeAsync(HttpContext context) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Middlewares\GlobalExceptionMiddleware.cs:line 18
+[2026-04-20 10:21:17 INF] HTTP POST /api/v1/auth/register responded 400 in 9.6096 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000007","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:17 INF] HTTP POST /api/v1/auth/register responded 429 in 2.1428 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000008","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:17 INF] HTTP POST /api/v1/auth/register responded 429 in 0.4702 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000009","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:18 INF] HTTP POST /api/v1/auth/register responded 429 in 0.7144 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000A","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:18 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1539 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000B","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:19 INF] HTTP POST /api/v1/auth/register responded 429 in 0.2304 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000C","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:19 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1515 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000D","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:19 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1901 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000E","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:19 INF] HTTP POST /api/v1/auth/register responded 429 in 0.2204 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:0000000F","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:19 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1749 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000010","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:20 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1494 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000011","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:20 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1507 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000012","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:20 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1416 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000013","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:20 INF] HTTP POST /api/v1/auth/register responded 429 in 0.2018 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000014","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 10:21:20 INF] HTTP POST /api/v1/auth/register responded 429 in 0.1584 ms {"SourceContext":"Serilog.AspNetCore.RequestLoggingMiddleware","RequestId":"0HNKUV2E5HB6A:00000015","ConnectionId":"0HNKUV2E5HB6A"}
+[2026-04-20 11:01:31 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 11:01:36 ERR] An error occurred while initializing the database {"SourceContext":"Program"}
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:5433
+ ---> System.Net.Sockets.SocketException (10061): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|214_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.UnpooledDataSource.Get(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlDatabaseCreator.Exists(Boolean async, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabaseCreator.EnsureCreatedAsync(CancellationToken cancellationToken)
+   at Program.<Main>$(String[] args) in C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\Program.cs:line 148
+[2026-04-20 11:02:08 INF] Checking database connection... {"SourceContext":"Program"}
+[2026-04-20 11:02:10 INF] Database ready. Running seed data... {"SourceContext":"Program"}
+[2026-04-20 11:02:10 INF] Database initialization completed successfully {"SourceContext":"Program"}
+[2026-04-20 11:02:10 ERR] Hosting failed to start {"EventId":{"Id":11,"Name":"HostedServiceStartupFaulted"},"SourceContext":"Microsoft.Extensions.Hosting.Internal.Host"}
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5156: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+ ---> System.Net.Sockets.SocketException (10048): Solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
