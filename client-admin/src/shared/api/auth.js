@@ -14,3 +14,7 @@ export const register = async(data) =>{
         headers: {"Content-Type": "application/json"}
     })
 }
+
+export const updateUserRole = async (userId, roleName) => {
+    return await axiosAuth.put(`/users/${userId}/role`, { roleName })
+}
