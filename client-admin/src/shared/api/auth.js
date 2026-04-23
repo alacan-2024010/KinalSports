@@ -9,9 +9,9 @@ export const getAllUsers = async () => {
     return { users: data }
 }
 
-export const register = async(data) =>{
-    return await axiosAuth.post("/auth/register", data,{
-        headers: {"Content-Type": "application/json"}
+export const register = async (data) => {
+    return await axiosAuth.post("/auth/register", data, {
+        headers: { "Content-Type": "multipart/form-data" }
     })
 }
 
