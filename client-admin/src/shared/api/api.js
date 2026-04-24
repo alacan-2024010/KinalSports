@@ -1,7 +1,16 @@
 import axios from "axios";
 import { useAuthStore } from "../../features/auth/store/authStore";
+
 const axiosAuth = axios.create({
     baseURL: import.meta.env.VITE_AUTH_URL,
+    timeout: 8000, // Tiempo de espera para la respuesta (8 segundos)
+    headers:{
+        "Content-Type": "application/json"
+    }
+});
+
+const axiosAdmin = axios.create({
+    baseURL: import.meta.env.VITE_ADMIN_URL,
     timeout: 8000, // Tiempo de espera para la respuesta (8 segundos)
     headers:{
         "Content-Type": "application/json"
@@ -16,4 +25,13 @@ axiosAuth.interceptors.request.use((config) =>{
     }
     return config;
 })
-export { axiosAuth };
+
+axiosAdmin.interceptors.request.use((config) =>{
+    const token = useAuthStore.getState().token;
+    if (token) {
+        config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+})
+
+export { axiosAuth, axiosAdmin };

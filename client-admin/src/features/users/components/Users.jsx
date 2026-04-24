@@ -29,19 +29,38 @@ export const Users = () => {
     useEffect(() => { if (error) showError(error); }, [error]);
 
     const filtered = useMemo(() => {
-        return users.filter((u) => {
-            const q = search.toLowerCase();
-            const matchSearch =
-                u.name?.toLowerCase().includes(q) ||
-                u.surname?.toLowerCase().includes(q) ||
-                u.username?.toLowerCase().includes(q);
-            const matchRole = roleFilter === "ALL" || u.role === roleFilter;
-            return matchSearch && matchRole;
-        });
+        const normalizedSearch = search.trim().toLowerCase();
+
+        return users.filter((u) =>{
+            const fullName = `${u.name ||  " "}  ${u.surname || " "}`
+            .trim()
+            .toLowerCase();
+
+            const username = (u.username || "").toLowerCase();
+            const role = (u.role || "").toUpperCase();
+
+            const matchesSearch =
+                !normalizedSearch ||
+                fullName.includes(normalizedSearch) ||
+                username.includes(normalizedSearch);
+
+            const matchesRole =
+                roleFilter === "ALL" ? true : role === roleFilter.toUpperCase();
+            
+                return matchesSearch && matchesRole;
+        })
     }, [users, search, roleFilter]);
 
+    //ceil sirve para redondear
     const totalPages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-    const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+    //Evitar que el usuario no vaya a una pagina que no tiene nada
+    const currentPage = Math.min(page, totalPages);
+   
+    const paginatedUsers = useMemo(() => {
+        const start = (currentPage -1) * PAGE_SIZE;
+        //slice sirve para partir el arreglo en 2
+        return filtered.slice(start, start + PAGE_SIZE);
+    }, [filtered, currentPage]);
 
     const handleSaveRole = async (user, newRole) => {
         const res = await updateUserRole(user.id, newRole);
@@ -103,7 +122,10 @@ export const Users = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     <input
                         value={search}
-                        onChange={(e) => { setSearch(e.target.value); setPage(1); }}
+                        onChange={(e) => { 
+                            setSearch(e.target.value)
+                            setPage(1); 
+                        }}
                         placeholder="Buscar por nombre o username..."
                         className="md:col-span-2 w-full px-3.5 py-2.5 text-sm bg-gray-50 border border-gray-200
                                    rounded-lg placeholder:text-gray-300 focus:outline-none focus:border-blue-600
@@ -111,7 +133,10 @@ export const Users = () => {
                     />
                     <select
                         value={roleFilter}
-                        onChange={(e) => { setRoleFilter(e.target.value); setPage(1); }}
+                        onChange={(e) => { 
+                            setRoleFilter(e.target.value)
+                            setPage(1); 
+                        }}
                         className="w-full px-3.5 py-2.5 text-sm bg-gray-50 border border-gray-200
                                    rounded-lg focus:outline-none focus:border-blue-600 focus:ring-2
                                    focus:ring-blue-100 transition-all duration-150 text-gray-700"
@@ -144,14 +169,14 @@ export const Users = () => {
                         </thead>
 
                         <tbody>
-                            {paginated.length === 0 ? (
+                            {paginatedUsers.length === 0 ? (
                                 <tr>
                                     <td colSpan={4} className="px-4 py-8 text-center text-sm text-gray-400">
                                         No hay usuarios para mostrar.
                                     </td>
                                 </tr>
                             ) : (
-                                paginated.map((u) => (
+                                paginatedUsers.map((u) => (
                                     <tr key={u.id} className="border-t border-gray-50 hover:bg-gray-50 transition-colors duration-100">
 
                                         {/* Nombre con avatar */}
@@ -201,32 +226,30 @@ export const Users = () => {
                 {/* Paginación */}
                 <div className="flex items-center justify-between px-4 py-3 border-t border-gray-50 bg-gray-50">
                     <p className="text-xs text-gray-400">
-                        Mostrando {filtered.length === 0 ? 0 : (page - 1) * PAGE_SIZE + 1}
-                        {" – "}
-                        {Math.min(page * PAGE_SIZE, filtered.length)} de {filtered.length}
+                        Mostrando  { " " }
+                        {(currentPage - 1) *  PAGE_SIZE + (paginatedUsers.length ? 1 : 0)}
+                        {" - "}
+                        {(currentPage - 1) * PAGE_SIZE + paginatedUsers.length} de{" "}
+                        {filtered.length} usuarios
                     </p>
 
                     <div className="flex items-center gap-2">
                         <button
-                            disabled={page === 1}
-                            onClick={() => setPage((p) => p - 1)}
-                            className="px-3 py-1.5 rounded-lg border border-gray-200 bg-white text-xs font-medium
-                                       text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed
-                                       transition-all duration-150"
+                            onClick={() => setPage((p)=> Math.max(1, p - 1))}
+                            disabled={currentPage === 1}
+                            className="px-3 py-1.5 rounded border bg-white text-sm"
                         >
                             Anterior
                         </button>
 
                         <span className="text-xs text-gray-400 min-w-[40px] text-center">
-                            {page} / {totalPages}
+                            {currentPage} / {totalPages}
                         </span>
 
                         <button
-                            disabled={page === totalPages}
-                            onClick={() => setPage((p) => p + 1)}
-                            className="px-3 py-1.5 rounded-lg border border-gray-200 bg-white text-xs font-medium
-                                       text-gray-600 hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed
-                                       transition-all duration-150"
+                            onClick = {() => setPage((p) => Math.min(totalPages, p + 1))}
+                            disabled={currentPage === totalPages}
+                            className="px-3 py-1.5 rounded border bg-white text-sm"
                         >
                             Siguiente
                         </button>
