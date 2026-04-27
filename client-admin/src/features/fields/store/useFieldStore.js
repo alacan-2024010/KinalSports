@@ -1,50 +1,94 @@
-import{create} from "zustand";
-import { 
+import { create } from "zustand";
+import {
     getFields as getFieldsRequest,
-    createField as createFieldRequest
-} from "../../../shared/api";
+    createField as createFieldRequest,
+    updateField as updateFieldRequest,
+    deleteField as deleteFieldRequest,
+} from "../../../shared/api"
 
-export const useFieldStore = create((set,get) =>({
+export const useFieldStore = create((set, get) => ({
+    
     fields: [],
     loading: false,
     error: null,
 
-    getFields: async() =>{
+    getFields: async () => {
         try {
-            set({loading: true, error: null})
+            set({ loading: true, error: null});
             const response = await getFieldsRequest();
             console.log(response)
 
             set({
                 fields: response.data.data,
-                loading: false,
-                error: null
+                loading: false
             })
+
         } catch (error) {
             set({
-                error: error.response?.data?.message || "Error al obtener canchas",
+                error: error.response?.data?.message || "Error al obtener canchas.",
                 loading: false
             })
         }
     },
 
-    createField: async(formData)=>{
+    createField: async (formData) => {
         try {
-            set({loading: true, error: null})
-            
+            set({ loading: true, error: null})
+
             const response = await createFieldRequest(formData);
-            console.log(response)
 
             set({
                 fields: [response.data.data, ...get().fields],
-                loading: false,
-            })
+                loading: false
+            });
 
             
         } catch (error) {
             set({
-                error: error.response?.data?.message || "Error al crear cancha",
+                loading: false,
+                error: error.response?.data?.message || "Error al crear campo."
+            })
+        }
+    },
+
+    updateField: async (id, data) => {
+        try {
+            set({ loading: true, error: null})
+            const response = await updateFieldRequest(id, data)
+
+            const updated = response.data.data
+
+            set({
+                fields: get().fields.map((f) =>
+                    f._id === id ? updated : f
+                ),
+                loading: false,
+            });
+
+        } catch (error) {
+            set({
+                loading: false,
+                error: error.response?.data?.message || "Error al actualizar el campo."
+            })
+        }
+    },
+
+    deleteField: async(id)=> {
+        try {
+            set({ loading: true, error: null })
+            
+            await deleteFieldRequest(id)
+
+            set({
+                fields: get().fields.filter(f => f._id !== id),
                 loading: false
+            })
+
+
+        } catch (error) {
+            set({
+                loading: false,
+                error: error.response?.data?.message || "Error al eliminar el campo."
             })
         }
     }

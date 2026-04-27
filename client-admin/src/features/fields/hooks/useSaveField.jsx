@@ -2,6 +2,7 @@ import { useFieldStore } from "../store/useFieldStore";
 
 export const useSaveField = () => {
     const createField = useFieldStore((state) => state.createField);
+    const updateField = useFieldStore((state) => state.updateField);
 
     const saveField = async (data, fieldId = null) => {
         const formData = new FormData();
@@ -12,16 +13,16 @@ export const useSaveField = () => {
         formData.append("pricePerHour", data.pricePerHour);
         formData.append("description", data.description);
 
-        if (data.photo && data.photo.length > 0) {
+        if(data.photo?.length > 0) {
             formData.append("image", data.photo[0]);
         }
 
-        if (fieldId) {
-            // TODO: updateField(fieldId, formData)
+        if(fieldId) {
+            await updateField(fieldId, formData)
         } else {
-            await createField(formData);
+            await createField(formData)
         }
-    };
+    }
 
     return { saveField };
-};
+}
