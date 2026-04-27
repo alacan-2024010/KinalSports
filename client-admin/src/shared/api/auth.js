@@ -18,3 +18,7 @@ export const register = async (data) => {
 export const updateUserRole = async (userId, roleName) => {
     return await axiosAuth.put(`/users/${userId}/role`, { roleName })
 }
+
+export const verifyEmail = async(token)=>{
+    return await axiosAuth.post("/auth/verify-email",{ token })
+}
