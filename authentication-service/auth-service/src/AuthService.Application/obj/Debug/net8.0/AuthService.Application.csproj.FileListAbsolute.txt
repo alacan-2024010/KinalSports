@@ -44,4 +44,4 @@ C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\o
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\obj\Debug\net8.0\refint\AuthService.Application.dll
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.pdb
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\obj\Debug\net8.0\ref\AuthService.Application.dll
-C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\obj\Debug\net8.0\AuthServ.67992DEE.Up2Date
+C:\KinalSports\authentication-service\auth-service\src\AuthService.Application\obj\Debug\net8.0\AuthService.Application.csproj.CopyComplete

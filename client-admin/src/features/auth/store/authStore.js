@@ -2,7 +2,9 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import {
     login as loginRequest,
-    register as registerRequest
+    register as registerRequest,
+    resetPassword as resetPasswordRequest,
+    forgotPassword as forgotPasswordRequest
 } from "../../../shared/api"
 import { showError } from "../../../shared/utils/toast";
 
@@ -11,26 +13,28 @@ export const useAuthStore = create(
         (set, get) => ({
             user: null,
             token: null,
+            refreshToken: null,
             expiresAt: null,
             loading: false,
             error: null,
-            isLoadingAuth:true,
+            isLoadingAuth: false,
             isAuthenticated: false,
 
             checkAuth: () => {
                 const token = get().token;
-                const role =get().user?.role;
-                const isAdmin = roler === "ADMIN_ROLE";
-                if (token && isAdmin) {
-                    set({ 
+                const role = get().user?.role;
+                const isAdmin = role === "ADMIN_ROLE";
+
+                if (token && !isAdmin) {
+                    set({
                         user: null,
                         token: null,
+                        refreshToken: null,
                         expiresAt: null,
-                        loading: false,
-                        isLoadingAuth:true,
                         isAuthenticated: false,
-                        error: "No tienes permisos para acceder como administrador" 
-                    });
+                        isLoadingAuth: false,
+                        error: "No tienes permisos para acceder como administrador."
+                    })
                     return;
                 }
 
@@ -38,30 +42,33 @@ export const useAuthStore = create(
                     isLoadingAuth: false,
                     isAuthenticated: Boolean(token) && isAdmin
                 })
-            },   
+            },
 
             login: async ({ emailOrUsername, password }) => {
                 try {
                     set({ loading: true, error: null });
-                    const { data } = await loginRequest({ emailOrUsername, password })
-                    console.log(data)
 
-                    const role = data.userDetails?.role;
-                    if(role !== "ADMIN_ROLE") {
-                        const message = 
-                            "No tienes permisos para acceder como administrador";
+                    const { data } = await loginRequest({ emailOrUsername, password })
+
+                    const role = data?.userDetails?.role;
+
+                    if (role !== "ADMIN_ROLE") {
+                        const message = "No tienes permisos para acceder como administrador"
+
                         set({
                             user: null,
                             token: null,
+                            refreshToken: null,
                             expiresAt: null,
-                            loading: false,
-                            isLoadingAuth:true,
                             isAuthenticated: false,
+                            isLoadingAuth: false,
+                            loading: false,
                             error: message
                         })
 
                         showError(message);
-                        return { success: false, error: message }
+
+                        return { success: false, error: message}
                     }
 
                     set({
@@ -70,16 +77,20 @@ export const useAuthStore = create(
                         refreshToken: data.refreshToken,
                         expiresAt: data.expiresAt,
                         loading: false,
-                        isAuthenticated: true
+                        isAuthenticated: true,
+                        isLoadingAuth: false
                     })
 
                     return { success: true }
 
                 } catch (err) {
-                    console.error("Login error:", err);
                     const message =
                         err.response?.data?.message || "Error de autenticación";
-                    set({ error: message, loading: false })
+
+                    set({ error: message, loading: false, isLoadingAuth:false })
+
+                     showError(message);
+
                     return { success: false, error: message }
                 }
             },
@@ -89,7 +100,7 @@ export const useAuthStore = create(
                     set({ loading: true, error: null });
                     const { data } = await registerRequest(formData);
                     set({ loading: false });
-                    return { 
+                    return {
                         success: true,
                         emailVerificationRequired: data?.emailVerificationRequired,
                         data,
@@ -108,6 +119,32 @@ export const useAuthStore = create(
                     expiresAt: null,
                     isAuthenticated: false
                 })
+            },
+
+            resetPassword: async (token, newPassword) => {
+                try {
+                    set({ loading: true, error: null });
+                    const { data } = await resetPasswordRequest(token, newPassword);
+                    set({ loading: false });
+                    return { success: true, data };
+                } catch (err) {
+                    const message = err.response?.data?.message || "Error al cambiar la contraseña";
+                    set({ error: message, loading: false });
+                    return { success: false, error: message };
+                }
+            },
+
+            forgotPassword: async (email) => {
+                try {
+                    set({ loading: true, error: null });
+                    const { data } = await forgotPasswordRequest({ email });
+                    set({ loading: false });
+                    return { success: true, data };
+                } catch (err) {
+                    const message = err.response?.data?.message || "Error al solicitar el restablecimiento de la contraseña";
+                    set({ error: message, loading: false });
+                    return { success: false, error: message };
+                }
             }
         }),
         { name: "auth-storage" }

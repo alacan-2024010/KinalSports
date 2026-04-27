@@ -7,30 +7,29 @@ import { Users } from "../../features/users/components/Users.jsx"
 import { Fields } from "../../features/fields/components/Fields.jsx"
 import{ VerifyEmailPage } from "../../features/auth/pages/VerifyEmailPage.jsx"
 import{ UnhautorizedPage } from "../../features/auth/pages/UnhautorizedPage.jsx"
+import { ResetPasswordPage } from "../../features/auth/pages/ResetPasswordPage.jsx"
 
 export const AppRoutes = () => {
     return (
         <Routes>
-            {/*Rutas Públicas*/}
+            {/* RUTAS PUBLICAS */}
             <Route path="/" element={<AuthPage />} />
             <Route path="/verify-email" element={<VerifyEmailPage />} />
             <Route path="/unauthorized" element={<UnhautorizedPage />} />
-
-            {/*Protected Routes + Role*/}
+            <Route path="/reset-password" element={<ResetPasswordPage />} />
+            {/* PROCTED ROUTES + ROLE */}
             <Route
-                path="/dashboard" 
+                path="/dashboard"
                 element={
                     <ProtectedRoute>
-                    <RoleGuard allowedRoles={["ADMIN_ROLE"]}>
-                        <DashboardPage />
-                    </RoleGuard>
+                        <RoleGuard allowedRoles={["ADMIN_ROLE"]}>
+                            <DashboardPage />
+                        </RoleGuard>
                     </ProtectedRoute>
-                    }
+                }
             >
-
-                <Route path = "users" element={<Users/>}/>
-                <Route path = "fields" element={<Fields/>}/>
-
+                <Route path="users" element={<Users />} />
+                <Route path="fields" element={<Fields />} />
             </Route>
         </Routes>
     )

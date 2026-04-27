@@ -524,4 +524,4 @@ C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.pdb
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.genruntimeconfig.cache
 C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug\net8.0\ref\AuthService.Api.dll
-C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug\net8.0\AuthServ.C02AB606.Up2Date
+C:\KinalSports\authentication-service\auth-service\src\AuthService.Api\obj\Debug\net8.0\AuthService.Api.csproj.CopyComplete
